@@ -18,7 +18,7 @@ Os estabelecimentos podem efetuar seu cadastro e disponibilizar informções per
 * MySql
 
 # Repositório
-* Frontend : https://github.com/fabioo-junioor/mesa-online
+* Frontend : https://github.com/fabioo-junioor/mesa-online-frontend
   
 # Autor
 #### Fábio Júnior
