@@ -1,4 +1,4 @@
-import connect from '../db/connect.js';
+import connect from '../database/connect.js';
 
 const getPessoa = async (id) => {
     const conn = await connect();
