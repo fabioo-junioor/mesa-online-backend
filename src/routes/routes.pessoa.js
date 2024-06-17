@@ -1,6 +1,7 @@
 import { Router } from 'express';
 const routerPessoa = Router();
 
+
 //Controllers
 import pessoaController from '../controllers/pessoa.controller.js';
 
