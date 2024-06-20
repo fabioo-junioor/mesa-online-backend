@@ -4,8 +4,11 @@
   "type": "module",
   "description": "Este é um projeto que desenvolvi chamado Mesa Online, é uma aplicação web que consome dados de uma **API** desenvolvida em **Node.js** e os exibe em um layout intuitivo e atraente criado em **Vue.js**. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos.  \r A Mesa Online é uma ferramenta que foi desenvolvida para proporcionar aos usuários reservarem lugares em estabelecimento comercias como: restaurantes, pub's, bares, etc.\r Os estabelecimentos podem efetuar seu cadastro e disponibilizar informções pertinentes para que usuário possam reservar um os mais lugares com rapidez sem a necessidade de esperar o retorno de um funcionário.",
   "main": "./server.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js",
     "dev": "nodemon ./server.js",
     "build": "node ./server.js"
   },
@@ -13,12 +16,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.10.1"
   },
   "devDependencies": {
+    "@vercel/node": "^3.1.7",
     "nodemon": "^3.1.3"
   }
 }
