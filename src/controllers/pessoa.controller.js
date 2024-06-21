@@ -12,6 +12,9 @@ const show = async (req, res) => {
 
     }
 }
+const store = async (req, res) => {
+    
+}
 const update = async (req, res) => {
     try{
         if(await updatePessoa(req)){
@@ -32,5 +35,6 @@ const update = async (req, res) => {
 
 export default {
     show,
+    store,
     update
 }
