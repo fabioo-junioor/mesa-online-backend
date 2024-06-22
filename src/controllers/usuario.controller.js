@@ -35,8 +35,8 @@ const update = async (req, res) => {
         const { senha } = req.body;
         const resposta = (await verifySenhaEquals(req))[0]?.senha;
         if(senha !== resposta){
-            return res.status(200).json({
-                statusCode: 200,
+            return res.status(406).json({
+                statusCode: 406,
                 message: 'Senha atual invalida'
             })
         }
